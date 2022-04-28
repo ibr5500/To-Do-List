@@ -10,7 +10,7 @@ const tasksList = [{
 {
   index: 1,
   description: 'Coding',
-  completed: false,
+  completed: true,
 },
 {
   index: 2,
@@ -23,8 +23,8 @@ const getTasks = () => {
   tasks.innerHTML = tasksList.map((task) => `
   <div class="task">
                     <div>
-                        <input id="checkbox-${task.index}" type="checkbox" name="checkbox" />
-                        <label id="task" for="to-do-task">${task.description}</label>
+                        <input id="checkbox-${task.index}" type="checkbox" name="checkbox" ${!task.completed ? '' : 'checked'} />
+                        <label id="task" for="to-do-task" class="${task.completed ? 'checked' : ''}">${task.description}</label>
                     </div>
                     <i id="ellips" class="fa-solid fa-ellipsis-vertical ellips"></i>
                 </div>
