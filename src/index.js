@@ -1,29 +1,26 @@
-import _ from 'lodash';
 import './index.css';
 
-const refresh = document.querySelector('#refersh');
-const addItem = document.querySelector('#enter');
 const tasks = document.querySelector('.todo-items');
 
 const tasksList = [{
-        index: 0,
-        description: 'Go Running',
-        completed: false
-    },
-    {
-        index: 1,
-        description: 'Coding',
-        completed: false
-    },
-    {
-        index: 2,
-        description: 'Swiming',
-        completed: false
-    }
-]
+  index: 0,
+  description: 'Go Running',
+  completed: false,
+},
+{
+  index: 1,
+  description: 'Coding',
+  completed: false,
+},
+{
+  index: 2,
+  description: 'Swiming',
+  completed: false,
+},
+];
 
 const getTasks = () => {
-    tasks.innerHTML = tasksList.map((task) => `
+  tasks.innerHTML = tasksList.map((task) => `
   <div class="task">
                     <div>
                         <input id="checkbox-${task.index}" type="checkbox" name="checkbox" />
@@ -31,10 +28,9 @@ const getTasks = () => {
                     </div>
                     <i id="ellips" class="fa-solid fa-ellipsis-vertical ellips"></i>
                 </div>
-  `).join('')
-}
-
+  `).join('');
+};
 
 window.addEventListener('load', () => {
-    getTasks();
-})
+  getTasks();
+});
