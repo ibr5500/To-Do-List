@@ -1,14 +1,40 @@
 import _ from 'lodash';
 import './index.css';
 
-function component() {
-  const element = document.createElement('div');
+const refresh = document.querySelector('#refersh');
+const addItem = document.querySelector('#enter');
+const tasks = document.querySelector('.todo-items');
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello 00', 'webpack'], ' ');
-  element.classList.add('hello');
+const tasksList = [{
+        index: 0,
+        description: 'Go Running',
+        completed: false
+    },
+    {
+        index: 1,
+        description: 'Coding',
+        completed: false
+    },
+    {
+        index: 2,
+        description: 'Swiming',
+        completed: false
+    }
+]
 
-  return element;
+const getTasks = () => {
+    tasks.innerHTML = tasksList.map((task) => `
+  <div class="task">
+                    <div>
+                        <input id="checkbox-${task.index}" type="checkbox" name="checkbox" />
+                        <label id="task" for="to-do-task">${task.description}</label>
+                    </div>
+                    <i id="ellips" class="fa-solid fa-ellipsis-vertical ellips"></i>
+                </div>
+  `).join('')
 }
 
-document.body.appendChild(component());
+
+window.addEventListener('load', () => {
+    getTasks();
+})
