@@ -36,6 +36,7 @@ To get a local copy up and running follow these simple example steps.
 - Webpack
 
 ### Run tests
+
 - Open your terminal, move to the directory where you want to clone the app (i.e cd Documents) 
 - Enter git clone git@github.com:ibr5500.github.io/To-Do-List/ 
 - Change to the directory you just clone into (i.e cd To-Do-List)
