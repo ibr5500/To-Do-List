@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: monospace;\r\n}\r\n\r\nbody {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 80%;\r\n  margin: 120px auto 0 auto;\r\n  border-radius: 8px;\r\n  box-shadow: -2px 2px 5px 2px #d7d7d7;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  width: auto;\r\n  padding: 20px;\r\n  margin: 0 0 5px 0;\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.header .icon {\r\n  width: 30px;\r\n  color: #808080;\r\n  margin: 10px 0 0 0;\r\n}\r\n\r\n.item {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  text-align: left;\r\n  padding: 20px;\r\n}\r\n\r\n.item #new-item {\r\n  width: 100%;\r\n  font-size: 20px;\r\n  font-style: italic;\r\n  border: none;\r\n}\r\n\r\n.item .enter-icon {\r\n  width: 30px;\r\n  height: 30px;\r\n  color: #808080;\r\n  margin: 10px 15px 0 0;\r\n  transform: rotate(-270deg);\r\n}\r\n\r\n.item-container {\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.task {\r\n  display: flex;\r\n  flex-direction: row;\r\n  width: auto;\r\n  justify-content: space-between;\r\n  font-size: 20px;\r\n  padding: 20px;\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.task > i {\r\n  color: #808080;\r\n  margin: 0 15px 0 0;\r\n}\r\n\r\n.checked {\r\n  width: 110%;\r\n  color: #808080;\r\n  text-decoration: line-through;\r\n}\r\n\r\n.clear-completed {\r\n  background: #f1eeee;\r\n  color: #808080;\r\n  margin: auto;\r\n  padding: 20px;\r\n}\r\n\r\n.clear-completed h3 {\r\n  text-align: center;\r\n  font-size: 20px;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,UAAU;EACV,yBAAyB;EACzB,kBAAkB;EAClB,oCAAoC;AACtC;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,WAAW;EACX,aAAa;EACb,iBAAiB;EACjB,gCAAgC;AAClC;;AAEA;EACE,WAAW;EACX,cAAc;EACd,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,gBAAgB;EAChB,aAAa;AACf;;AAEA;EACE,WAAW;EACX,eAAe;EACf,kBAAkB;EAClB,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,cAAc;EACd,qBAAqB;EACrB,0BAA0B;AAC5B;;AAEA;EACE,gCAAgC;AAClC;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;EACX,8BAA8B;EAC9B,eAAe;EACf,aAAa;EACb,gCAAgC;AAClC;;AAEA;EACE,cAAc;EACd,kBAAkB;AACpB;;AAEA;EACE,WAAW;EACX,cAAc;EACd,6BAA6B;AAC/B;;AAEA;EACE,mBAAmB;EACnB,cAAc;EACd,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,kBAAkB;EAClB,eAAe;AACjB","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: monospace;\r\n}\r\n\r\nbody {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 80%;\r\n  margin: 120px auto 0 auto;\r\n  border-radius: 8px;\r\n  box-shadow: -2px 2px 5px 2px #d7d7d7;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  width: auto;\r\n  padding: 20px;\r\n  margin: 0 0 5px 0;\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.header .icon {\r\n  width: 30px;\r\n  color: #808080;\r\n  margin: 10px 0 0 0;\r\n}\r\n\r\n.item {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  text-align: left;\r\n  padding: 20px;\r\n}\r\n\r\n.item #new-item {\r\n  width: 100%;\r\n  font-size: 20px;\r\n  font-style: italic;\r\n  border: none;\r\n}\r\n\r\n.item .enter-icon {\r\n  width: 30px;\r\n  height: 30px;\r\n  color: #808080;\r\n  margin: 10px 15px 0 0;\r\n  transform: rotate(-270deg);\r\n}\r\n\r\n.item-container {\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.task {\r\n  display: flex;\r\n  flex-direction: row;\r\n  width: auto;\r\n  justify-content: space-between;\r\n  font-size: 20px;\r\n  padding: 20px;\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.task > i {\r\n  color: #808080;\r\n  margin: 0 15px 0 0;\r\n}\r\n\r\n.checked {\r\n  width: 110%;\r\n  color: #808080;\r\n  text-decoration: line-through;\r\n}\r\n\r\n.clear-completed {\r\n  background: #f1eeee;\r\n  color: #808080;\r\n  margin: auto;\r\n  padding: 20px;\r\n}\r\n\r\n.clear-completed h3 {\r\n  text-align: center;\r\n  font-size: 20px;\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: monospace, sans-serif;\r\n}\r\n\r\nbody {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 80%;\r\n  margin: 120px auto 0 auto;\r\n  border-radius: 8px;\r\n  box-shadow: -2px 2px 5px 2px #d7d7d7;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  width: auto;\r\n  padding: 20px;\r\n  margin: 0 0 5px 0;\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.header .icon {\r\n  width: 30px;\r\n  color: #808080;\r\n  margin: 10px 0 0 0;\r\n}\r\n\r\n.item {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  text-align: left;\r\n  padding: 20px;\r\n}\r\n\r\n.item #new-item {\r\n  width: 100%;\r\n  font-size: 20px;\r\n  font-style: italic;\r\n  border: none;\r\n}\r\n\r\n.item .enter-icon {\r\n  width: 30px;\r\n  height: 30px;\r\n  color: #808080;\r\n  margin: 10px 15px 0 0;\r\n  transform: rotate(-270deg);\r\n}\r\n\r\n.item-container {\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.task {\r\n  display: flex;\r\n  flex-direction: row;\r\n  width: auto;\r\n  justify-content: space-between;\r\n  font-size: 20px;\r\n  padding: 20px;\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.task > i {\r\n  color: #808080;\r\n  margin: 0 15px 0 0;\r\n}\r\n\r\n.checked {\r\n  width: 110%;\r\n  color: #808080;\r\n  text-decoration: line-through;\r\n}\r\n\r\n.clear-completed {\r\n  background: #f1eeee;\r\n  color: #808080;\r\n  margin: auto;\r\n  padding: 20px;\r\n}\r\n\r\n.clear-completed h3 {\r\n  text-align: center;\r\n  font-size: 20px;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,kCAAkC;AACpC;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,UAAU;EACV,yBAAyB;EACzB,kBAAkB;EAClB,oCAAoC;AACtC;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,WAAW;EACX,aAAa;EACb,iBAAiB;EACjB,gCAAgC;AAClC;;AAEA;EACE,WAAW;EACX,cAAc;EACd,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,gBAAgB;EAChB,aAAa;AACf;;AAEA;EACE,WAAW;EACX,eAAe;EACf,kBAAkB;EAClB,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,cAAc;EACd,qBAAqB;EACrB,0BAA0B;AAC5B;;AAEA;EACE,gCAAgC;AAClC;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;EACX,8BAA8B;EAC9B,eAAe;EACf,aAAa;EACb,gCAAgC;AAClC;;AAEA;EACE,cAAc;EACd,kBAAkB;AACpB;;AAEA;EACE,WAAW;EACX,cAAc;EACd,6BAA6B;AAC/B;;AAEA;EACE,mBAAmB;EACnB,cAAc;EACd,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,kBAAkB;EAClB,eAAe;AACjB","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: monospace, sans-serif;\r\n}\r\n\r\nbody {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 80%;\r\n  margin: 120px auto 0 auto;\r\n  border-radius: 8px;\r\n  box-shadow: -2px 2px 5px 2px #d7d7d7;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  width: auto;\r\n  padding: 20px;\r\n  margin: 0 0 5px 0;\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.header .icon {\r\n  width: 30px;\r\n  color: #808080;\r\n  margin: 10px 0 0 0;\r\n}\r\n\r\n.item {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  text-align: left;\r\n  padding: 20px;\r\n}\r\n\r\n.item #new-item {\r\n  width: 100%;\r\n  font-size: 20px;\r\n  font-style: italic;\r\n  border: none;\r\n}\r\n\r\n.item .enter-icon {\r\n  width: 30px;\r\n  height: 30px;\r\n  color: #808080;\r\n  margin: 10px 15px 0 0;\r\n  transform: rotate(-270deg);\r\n}\r\n\r\n.item-container {\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.task {\r\n  display: flex;\r\n  flex-direction: row;\r\n  width: auto;\r\n  justify-content: space-between;\r\n  font-size: 20px;\r\n  padding: 20px;\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.task > i {\r\n  color: #808080;\r\n  margin: 0 15px 0 0;\r\n}\r\n\r\n.checked {\r\n  width: 110%;\r\n  color: #808080;\r\n  text-decoration: line-through;\r\n}\r\n\r\n.clear-completed {\r\n  background: #f1eeee;\r\n  color: #808080;\r\n  margin: auto;\r\n  padding: 20px;\r\n}\r\n\r\n.clear-completed h3 {\r\n  text-align: center;\r\n  font-size: 20px;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -611,28 +611,28 @@ __webpack_require__.r(__webpack_exports__);
 const tasks = document.querySelector('.todo-items');
 
 const tasksList = [{
-        index: 0,
-        description: 'Go Running',
-        completed: false,
-    },
-    {
-        index: 1,
-        description: 'Coding',
-        completed: true,
-    },
-    {
-        index: 2,
-        description: 'Swiming',
-        completed: false,
-    },
+  index: 0,
+  description: 'Go Running',
+  completed: false,
+},
+{
+  index: 1,
+  description: 'Coding',
+  completed: true,
+},
+{
+  index: 2,
+  description: 'Swiming',
+  completed: false,
+},
 ];
 
 const getTasks = () => {
-    tasks.innerHTML = tasksList.map((task) => `
+  tasks.innerHTML = tasksList.map((task) => `
   <div class="task">
                     <div>
-                        <input id="checkbox-${task.index}" type="checkbox" name="checkbox" ${task.completed? checked: null} />
-                        <label id="task" for="to-do-task" class="${task.completed? 'checked': ''}">${task.description}</label>
+                        <input id="checkbox-${task.index}" type="checkbox" name="checkbox" ${!task.completed ? '' : 'checked'} />
+                        <label id="task" for="to-do-task" class="${task.completed ? 'checked' : ''} ">${task.description}</label>
                     </div>
                     <i id="ellips" class="fa-solid fa-ellipsis-vertical ellips"></i>
                 </div>
@@ -640,7 +640,7 @@ const getTasks = () => {
 };
 
 window.addEventListener('load', () => {
-    getTasks();
+  getTasks();
 });
 })();
 
