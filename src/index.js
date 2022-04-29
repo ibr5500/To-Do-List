@@ -1,36 +1,84 @@
+import Task from './moudles/task.js';
 import './index.css';
 
-const tasks = document.querySelector('.todo-items');
+let tasksList = JSON.parse(localStorage.getItem('tasks')) || [];
 
-const tasksList = [{
-  index: 0,
-  description: 'Go Running',
-  completed: false,
-},
-{
-  index: 1,
-  description: 'Coding',
-  completed: true,
-},
-{
-  index: 2,
-  description: 'Swiming',
-  completed: false,
-},
-];
-
-const getTasks = () => {
+const tasks = document.querySelector('.task-items');
+const displayTask = () => {
   tasks.innerHTML = tasksList.map((task) => `
-  <div class="task">
-                    <div>
-                        <input id="checkbox-${task.index}" type="checkbox" name="checkbox" ${!task.completed ? '' : 'checked'} />
-                        <label id="task" for="to-do-task" class="${!task.completed ? '' : 'checked'} ">${task.description}</label>
-                    </div>
-                    <i id="ellips" class="fa-solid fa-ellipsis-vertical ellips"></i>
-                </div>
-  `).join('');
+      <div id="${task.index}" class="task">
+        <div>
+            <input id="checkbox-${task.index}" class="checkbox" type="checkbox" name="checkbox" ${!task.completed ? '' : 'checked'} />
+            <input id="task" type='text' class=" ${!task.completed ? '' : 'checked'} " value="${task.description}" />
+        </div>
+        <i id="ellips-btn" class="fa-solid fa-ellipsis-vertical ellips hidden"></i>
+        <i id="trash" class="fa-solid fa-trash trash"></i>
+    </div>
+      `).join('');
+};
+
+const deleteTask = (e) => {
+  const item = e.target;
+  if (item.classList.contains('fa-trash')) {
+    const removeParent = item.parentElement;
+    removeParent.remove();
+    const newTaskList = tasksList.filter((elem) => +elem.index !== +removeParent.id);
+    const updateTaskList = newTaskList.map((elem, index) => {
+      elem.index = index + 1;
+      return elem;
+    });
+    localStorage.setItem('tasks', JSON.stringify(updateTaskList));
+    tasksList = updateTaskList;
+    displayTask();
+  }
+};
+tasks.addEventListener('click', deleteTask);
+
+tasks.addEventListener('keypress', (event) => {
+  if (event.target.type === 'text' && event.key === 'Enter') {
+    const targetedElem = event.target.parentElement.parentElement;
+    tasksList.filter((e) => +e.index === +targetedElem.id);
+    tasksList[targetedElem.id - 1].description = event.target.value;
+    localStorage.setItem('tasks', JSON.stringify(tasksList));
+  }
+});
+
+const refresh = document.querySelector('#refersh');
+refresh.addEventListener('click', () => {
+  window.location.reload();
+});
+
+const addNewTask = document.querySelector('#new-item');
+const enter = document.querySelector('#enter');
+const enterKey = document.querySelector('#new-item');
+
+const addTask = () => {
+  enter.addEventListener('click', () => {
+    if (!addNewTask.value) return;
+    const index = tasksList.length + 1;
+    const description = addNewTask.value;
+    let completed;
+    tasksList = [...tasksList, new Task(index, description, completed)];
+    localStorage.setItem('tasks', JSON.stringify(tasksList));
+    displayTask();
+    addNewTask.value = '';
+  });
+
+  enterKey.addEventListener('keyup', (e) => {
+    if (e.keyCode === 13) {
+      if (!addNewTask.value) return;
+      const index = tasksList.length + 1;
+      const description = addNewTask.value;
+      let completed;
+      tasksList = [...tasksList, new Task(index, description, completed)];
+      localStorage.setItem('tasks', JSON.stringify(tasksList));
+      displayTask();
+      addNewTask.value = '';
+    }
+  });
 };
 
 window.addEventListener('load', () => {
-  getTasks();
+  displayTask();
+  addTask();
 });
