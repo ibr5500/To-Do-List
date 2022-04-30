@@ -1,11 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: preserve data in the browser
+# To Do list: interactive list
 
 > in this project:
 - Set up the linters for html, css, and JavaScript.
 - Set up webpack configurations.
 - Create a dynamic to do list using objects.
+- Create add, remove, and edit functions the save the changes in local storage.
+- Create a function to save the update the local storage when clicking the checkbox.
+- Create a function to clear all completed tasks. 
 
 
 ## Built With 
@@ -18,11 +21,19 @@
 
 ## Live Demo (if available)
 
-[Click](https://ibr5500.github.io/To-Do-List/) for Live Demo Link
-
+Not avaliable
 
 ## Getting Started
+### steps to run the project
+#### 1 - Install npm.
+```
+npm install
+```
 
+#### 2 - run the project 
+```
+npm run dev
+```
 
 
 To get a local copy up and running follow these simple example steps.
