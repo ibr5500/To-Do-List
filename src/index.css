@@ -77,7 +77,7 @@ body {
 }
 
 .checked {
-  width: 110%;
+  width: auto;
   color: #808080;
   text-decoration: line-through;
 }
@@ -90,14 +90,14 @@ body {
 }
 
 .clear-completed h3 {
-  width: auto;
-  text-align: center;
+  width: fit-content;
   font-size: 20px;
+  margin: auto;
 }
 
 .clear-completed h3:hover {
   color: #000;
-  font-size: 22px;
+  transform: scale(1.2, 1.2);
 }
 
 .hidden {

@@ -1,14 +1,24 @@
 import Task from './moudles/task.js';
 import './index.css';
 
+const tasks = document.querySelector('.task-items');
+
+const refresh = document.querySelector('#refersh');
+
+const clearAll = document.querySelector('#clear');
+
+const addNewTask = document.querySelector('#new-item');
+const enter = document.querySelector('#enter');
+const enterKey = document.querySelector('#new-item');
+
 let tasksList = JSON.parse(localStorage.getItem('tasks')) || [];
 
-const tasks = document.querySelector('.task-items');
+// display tasks function
 const displayTask = () => {
   tasks.innerHTML = tasksList.map((task) => `
       <div id="${task.index}" class="task">
         <div>
-            <input id="checkbox-${task.index}" class="checkbox" type="checkbox" name="checkbox" ${!task.completed ? '' : 'checked'} />
+            <input id="${task.index}" class="checkbox" type="checkbox" name="checkbox" ${!task.completed ? '' : 'checked'} />
             <input id="task" type='text' class=" ${!task.completed ? '' : 'checked'} " value="${task.description}" />
         </div>
         <i id="ellips-btn" class="fa-solid fa-ellipsis-vertical ellips hidden"></i>
@@ -17,6 +27,7 @@ const displayTask = () => {
       `).join('');
 };
 
+// delete task function
 const deleteTask = (e) => {
   const item = e.target;
   if (item.classList.contains('fa-trash')) {
@@ -34,6 +45,7 @@ const deleteTask = (e) => {
 };
 tasks.addEventListener('click', deleteTask);
 
+// editing task function
 tasks.addEventListener('keypress', (event) => {
   if (event.target.type === 'text' && event.key === 'Enter') {
     const targetedElem = event.target.parentElement.parentElement;
@@ -43,15 +55,40 @@ tasks.addEventListener('keypress', (event) => {
   }
 });
 
-const refresh = document.querySelector('#refersh');
+// update on changing the checkbock function
+tasks.addEventListener('change', (event) => {
+  if (event.target.checked) {
+    event.target.nextElementSibling.classList.add('checked');
+    const index = event.target.id;
+    tasksList[index - 1].completed = true;
+    localStorage.setItem('tasks', JSON.stringify(tasksList));
+    displayTask();
+  } else {
+    event.target.nextElementSibling.classList.remove('checked');
+    const index = event.target.id;
+    tasksList[index - 1].completed = false;
+    localStorage.setItem('tasks', JSON.stringify(tasksList));
+    displayTask();
+  }
+});
+
+// referesh on click refereshing button function
 refresh.addEventListener('click', () => {
   window.location.reload();
 });
 
-const addNewTask = document.querySelector('#new-item');
-const enter = document.querySelector('#enter');
-const enterKey = document.querySelector('#new-item');
+// clear all completed function
+clearAll.addEventListener('click', () => {
+  const uncompletedTasks = tasksList.filter((element) => element.completed !== true);
+  const newTaskList = uncompletedTasks.map((elem, index) => {
+    elem.index = index + 1;
+    return elem;
+  });
+  localStorage.setItem('tasks', JSON.stringify(newTaskList));
+  window.location.reload();
+});
 
+// add new task function
 const addTask = () => {
   enter.addEventListener('click', () => {
     if (!addNewTask.value) return;

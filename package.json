@@ -1,9 +1,12 @@
 {
+    "homepage": "https://ibr5500.github.io/To-Do-List/",
     "name": "to-do-list",
     "version": "1.0.0",
     "description": "",
     "private": true,
     "scripts": {
+        "predeploy": "npm run dev",
+        "deploy": "gh-pages -d dev",
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "webpack",
         "dev": "webpack serve"
@@ -18,13 +21,13 @@
     "bugs": {
         "url": "https://github.com/ibr5500/To-Do-List/issues"
     },
-    "homepage": "https://github.com/ibr5500/To-Do-List#readme",
     "devDependencies": {
         "babel-eslint": "^10.1.0",
         "css-loader": "^6.7.1",
         "eslint": "^7.32.0",
         "eslint-config-airbnb-base": "^14.2.1",
         "eslint-plugin-import": "^2.26.0",
+        "gh-pages": "^3.2.3",
         "hint": "^6.1.12",
         "html-webpack-plugin": "^5.5.0",
         "style-loader": "^3.3.1",

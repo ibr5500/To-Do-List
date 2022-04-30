@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: monospace, sans-serif;\r\n}\r\n\r\nbody {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 80%;\r\n  margin: 80px auto 0 auto;\r\n  border-radius: 8px;\r\n  box-shadow: -2px 2px 5px 2px #d7d7d7;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  width: auto;\r\n  padding: 20px;\r\n  margin: 0 0 5px 0;\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.header .icon {\r\n  width: 30px;\r\n  color: #808080;\r\n  margin: 10px 0 0 0;\r\n}\r\n\r\n#task {\r\n  border: none;\r\n  font-size: 20px;\r\n}\r\n\r\n.item {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  text-align: left;\r\n  padding: 20px;\r\n}\r\n\r\n.item #new-item {\r\n  width: 100%;\r\n  font-size: 20px;\r\n  font-style: italic;\r\n  border: none;\r\n}\r\n\r\n.item .enter-icon {\r\n  width: 30px;\r\n  height: 30px;\r\n  color: #808080;\r\n  margin: 10px 15px 0 0;\r\n  transform: rotate(-270deg);\r\n}\r\n\r\n.item-container {\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.task {\r\n  display: flex;\r\n  flex-direction: row;\r\n  width: auto;\r\n  justify-content: space-between;\r\n  font-size: 20px;\r\n  padding: 20px;\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.task > i {\r\n  color: #808080;\r\n  margin: 0 15px 0 0;\r\n}\r\n\r\n.checked {\r\n  width: 110%;\r\n  color: #808080;\r\n  text-decoration: line-through;\r\n}\r\n\r\n.clear-completed {\r\n  background: #f1eeee;\r\n  color: #808080;\r\n  margin: auto;\r\n  padding: 20px;\r\n}\r\n\r\n.clear-completed h3 {\r\n  width: auto;\r\n  text-align: center;\r\n  font-size: 20px;\r\n}\r\n\r\n.clear-completed h3:hover {\r\n  color: #000;\r\n  font-size: 22px;\r\n}\r\n\r\n.hidden {\r\n  display: none;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,kCAAkC;AACpC;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,UAAU;EACV,wBAAwB;EACxB,kBAAkB;EAClB,oCAAoC;AACtC;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,WAAW;EACX,aAAa;EACb,iBAAiB;EACjB,gCAAgC;AAClC;;AAEA;EACE,WAAW;EACX,cAAc;EACd,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,gBAAgB;EAChB,aAAa;AACf;;AAEA;EACE,WAAW;EACX,eAAe;EACf,kBAAkB;EAClB,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,cAAc;EACd,qBAAqB;EACrB,0BAA0B;AAC5B;;AAEA;EACE,gCAAgC;AAClC;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;EACX,8BAA8B;EAC9B,eAAe;EACf,aAAa;EACb,gCAAgC;AAClC;;AAEA;EACE,cAAc;EACd,kBAAkB;AACpB;;AAEA;EACE,WAAW;EACX,cAAc;EACd,6BAA6B;AAC/B;;AAEA;EACE,mBAAmB;EACnB,cAAc;EACd,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,WAAW;EACX,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,eAAe;AACjB;;AAEA;EACE,aAAa;AACf","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: monospace, sans-serif;\r\n}\r\n\r\nbody {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 80%;\r\n  margin: 80px auto 0 auto;\r\n  border-radius: 8px;\r\n  box-shadow: -2px 2px 5px 2px #d7d7d7;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  width: auto;\r\n  padding: 20px;\r\n  margin: 0 0 5px 0;\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.header .icon {\r\n  width: 30px;\r\n  color: #808080;\r\n  margin: 10px 0 0 0;\r\n}\r\n\r\n#task {\r\n  border: none;\r\n  font-size: 20px;\r\n}\r\n\r\n.item {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  text-align: left;\r\n  padding: 20px;\r\n}\r\n\r\n.item #new-item {\r\n  width: 100%;\r\n  font-size: 20px;\r\n  font-style: italic;\r\n  border: none;\r\n}\r\n\r\n.item .enter-icon {\r\n  width: 30px;\r\n  height: 30px;\r\n  color: #808080;\r\n  margin: 10px 15px 0 0;\r\n  transform: rotate(-270deg);\r\n}\r\n\r\n.item-container {\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.task {\r\n  display: flex;\r\n  flex-direction: row;\r\n  width: auto;\r\n  justify-content: space-between;\r\n  font-size: 20px;\r\n  padding: 20px;\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.task > i {\r\n  color: #808080;\r\n  margin: 0 15px 0 0;\r\n}\r\n\r\n.checked {\r\n  width: 110%;\r\n  color: #808080;\r\n  text-decoration: line-through;\r\n}\r\n\r\n.clear-completed {\r\n  background: #f1eeee;\r\n  color: #808080;\r\n  margin: auto;\r\n  padding: 20px;\r\n}\r\n\r\n.clear-completed h3 {\r\n  width: auto;\r\n  text-align: center;\r\n  font-size: 20px;\r\n}\r\n\r\n.clear-completed h3:hover {\r\n  color: #000;\r\n  font-size: 22px;\r\n}\r\n\r\n.hidden {\r\n  display: none;\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: monospace, sans-serif;\r\n}\r\n\r\nbody {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 80%;\r\n  margin: 80px auto 0 auto;\r\n  border-radius: 8px;\r\n  box-shadow: -2px 2px 5px 2px #d7d7d7;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  width: auto;\r\n  padding: 20px;\r\n  margin: 0 0 5px 0;\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.header .icon {\r\n  width: 30px;\r\n  color: #808080;\r\n  margin: 10px 0 0 0;\r\n}\r\n\r\n#task {\r\n  border: none;\r\n  font-size: 20px;\r\n}\r\n\r\n.item {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  text-align: left;\r\n  padding: 20px;\r\n}\r\n\r\n.item #new-item {\r\n  width: 100%;\r\n  font-size: 20px;\r\n  font-style: italic;\r\n  border: none;\r\n}\r\n\r\n.item .enter-icon {\r\n  width: 30px;\r\n  height: 30px;\r\n  color: #808080;\r\n  margin: 10px 15px 0 0;\r\n  transform: rotate(-270deg);\r\n}\r\n\r\n.item-container {\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.task {\r\n  display: flex;\r\n  flex-direction: row;\r\n  width: auto;\r\n  justify-content: space-between;\r\n  font-size: 20px;\r\n  padding: 20px;\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.task > i {\r\n  color: #808080;\r\n  margin: 0 15px 0 0;\r\n}\r\n\r\n.checked {\r\n  width: auto;\r\n  color: #808080;\r\n  text-decoration: line-through;\r\n}\r\n\r\n.clear-completed {\r\n  background: #f1eeee;\r\n  color: #808080;\r\n  margin: auto;\r\n  padding: 20px;\r\n}\r\n\r\n.clear-completed h3 {\r\n  width: fit-content;\r\n  font-size: 20px;\r\n  margin: auto;\r\n}\r\n\r\n.clear-completed h3:hover {\r\n  color: #000;\r\n  transform: scale(1.2, 1.2);\r\n}\r\n\r\n.hidden {\r\n  display: none;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,kCAAkC;AACpC;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,UAAU;EACV,wBAAwB;EACxB,kBAAkB;EAClB,oCAAoC;AACtC;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,WAAW;EACX,aAAa;EACb,iBAAiB;EACjB,gCAAgC;AAClC;;AAEA;EACE,WAAW;EACX,cAAc;EACd,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,gBAAgB;EAChB,aAAa;AACf;;AAEA;EACE,WAAW;EACX,eAAe;EACf,kBAAkB;EAClB,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,cAAc;EACd,qBAAqB;EACrB,0BAA0B;AAC5B;;AAEA;EACE,gCAAgC;AAClC;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;EACX,8BAA8B;EAC9B,eAAe;EACf,aAAa;EACb,gCAAgC;AAClC;;AAEA;EACE,cAAc;EACd,kBAAkB;AACpB;;AAEA;EACE,WAAW;EACX,cAAc;EACd,6BAA6B;AAC/B;;AAEA;EACE,mBAAmB;EACnB,cAAc;EACd,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,kBAAkB;EAClB,eAAe;EACf,YAAY;AACd;;AAEA;EACE,WAAW;EACX,0BAA0B;AAC5B;;AAEA;EACE,aAAa;AACf","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: monospace, sans-serif;\r\n}\r\n\r\nbody {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 80%;\r\n  margin: 80px auto 0 auto;\r\n  border-radius: 8px;\r\n  box-shadow: -2px 2px 5px 2px #d7d7d7;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  width: auto;\r\n  padding: 20px;\r\n  margin: 0 0 5px 0;\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.header .icon {\r\n  width: 30px;\r\n  color: #808080;\r\n  margin: 10px 0 0 0;\r\n}\r\n\r\n#task {\r\n  border: none;\r\n  font-size: 20px;\r\n}\r\n\r\n.item {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  text-align: left;\r\n  padding: 20px;\r\n}\r\n\r\n.item #new-item {\r\n  width: 100%;\r\n  font-size: 20px;\r\n  font-style: italic;\r\n  border: none;\r\n}\r\n\r\n.item .enter-icon {\r\n  width: 30px;\r\n  height: 30px;\r\n  color: #808080;\r\n  margin: 10px 15px 0 0;\r\n  transform: rotate(-270deg);\r\n}\r\n\r\n.item-container {\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.task {\r\n  display: flex;\r\n  flex-direction: row;\r\n  width: auto;\r\n  justify-content: space-between;\r\n  font-size: 20px;\r\n  padding: 20px;\r\n  border-bottom: 2px solid #aeaeae;\r\n}\r\n\r\n.task > i {\r\n  color: #808080;\r\n  margin: 0 15px 0 0;\r\n}\r\n\r\n.checked {\r\n  width: auto;\r\n  color: #808080;\r\n  text-decoration: line-through;\r\n}\r\n\r\n.clear-completed {\r\n  background: #f1eeee;\r\n  color: #808080;\r\n  margin: auto;\r\n  padding: 20px;\r\n}\r\n\r\n.clear-completed h3 {\r\n  width: fit-content;\r\n  font-size: 20px;\r\n  margin: auto;\r\n}\r\n\r\n.clear-completed h3:hover {\r\n  color: #000;\r\n  transform: scale(1.2, 1.2);\r\n}\r\n\r\n.hidden {\r\n  display: none;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -630,14 +630,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const tasks = document.querySelector('.task-items');
+
+const refresh = document.querySelector('#refersh');
+
+const clearAll = document.querySelector('#clear');
+
+const addNewTask = document.querySelector('#new-item');
+const enter = document.querySelector('#enter');
+const enterKey = document.querySelector('#new-item');
+
 let tasksList = JSON.parse(localStorage.getItem('tasks')) || [];
 
-const tasks = document.querySelector('.task-items');
+// display tasks function
 const displayTask = () => {
   tasks.innerHTML = tasksList.map((task) => `
       <div id="${task.index}" class="task">
         <div>
-            <input id="checkbox-${task.index}" class="checkbox" type="checkbox" name="checkbox" ${!task.completed ? '' : 'checked'} />
+            <input id="${task.index}" class="checkbox" type="checkbox" name="checkbox" ${!task.completed ? '' : 'checked'} />
             <input id="task" type='text' class=" ${!task.completed ? '' : 'checked'} " value="${task.description}" />
         </div>
         <i id="ellips-btn" class="fa-solid fa-ellipsis-vertical ellips hidden"></i>
@@ -646,6 +656,7 @@ const displayTask = () => {
       `).join('');
 };
 
+// delete task function
 const deleteTask = (e) => {
   const item = e.target;
   if (item.classList.contains('fa-trash')) {
@@ -663,6 +674,7 @@ const deleteTask = (e) => {
 };
 tasks.addEventListener('click', deleteTask);
 
+// editing task function
 tasks.addEventListener('keypress', (event) => {
   if (event.target.type === 'text' && event.key === 'Enter') {
     const targetedElem = event.target.parentElement.parentElement;
@@ -672,15 +684,40 @@ tasks.addEventListener('keypress', (event) => {
   }
 });
 
-const refresh = document.querySelector('#refersh');
+// update on changing the checkbock function
+tasks.addEventListener('change', (event) => {
+  if (event.target.checked) {
+    event.target.nextElementSibling.classList.add('checked');
+    const index = event.target.id;
+    tasksList[index - 1].completed = true;
+    localStorage.setItem('tasks', JSON.stringify(tasksList));
+    displayTask();
+  } else {
+    event.target.nextElementSibling.classList.remove('checked');
+    const index = event.target.id;
+    tasksList[index - 1].completed = false;
+    localStorage.setItem('tasks', JSON.stringify(tasksList));
+    displayTask();
+  }
+});
+
+// referesh on click refereshing button function
 refresh.addEventListener('click', () => {
   window.location.reload();
 });
 
-const addNewTask = document.querySelector('#new-item');
-const enter = document.querySelector('#enter');
-const enterKey = document.querySelector('#new-item');
+// clear all completed function
+clearAll.addEventListener('click', () => {
+  const uncompletedTasks = tasksList.filter((element) => element.completed !== true);
+  const newTaskList = uncompletedTasks.map((elem, index) => {
+    elem.index = index + 1;
+    return elem;
+  });
+  localStorage.setItem('tasks', JSON.stringify(newTaskList));
+  window.location.reload();
+});
 
+// add new task function
 const addTask = () => {
   enter.addEventListener('click', () => {
     if (!addNewTask.value) return;
