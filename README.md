@@ -21,7 +21,7 @@
 
 ## Live Demo (if available)
 
-Not avaliable
+[Click](https://ibr5500.github.io/To-Do-List/) for Live Demo 
 
 ## Getting Started
 ### steps to run the project
