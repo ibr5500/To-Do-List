@@ -77,7 +77,7 @@ tasks.addEventListener('change', updateChanges);
 
 // referesh on click refereshing button function
 refresh.addEventListener('click', () => {
-  window.location.reload();
+    window.location.reload();
 });
 
 // clear all completed function
