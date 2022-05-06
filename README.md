@@ -2,6 +2,10 @@
 
 # To Do list: interactive list
 
+## description: 
+
+> - A todo list app that allow users to add new task, delete, edit, and clear all completed.Built with JavaScript.
+
 > in this project:
 - Set up the linters for html, css, and JavaScript.
 - Set up webpack configurations.
