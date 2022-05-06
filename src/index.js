@@ -13,7 +13,7 @@ const enterKey = document.querySelector('#new-item');
 
 let tasksList = JSON.parse(localStorage.getItem('tasks')) || [];
 
-// display tasks function
+// display tasks function.
 const displayTask = () => {
   tasks.innerHTML = tasksList.map((task) => ` 
       <div id="${task.index}" class="task">
@@ -27,10 +27,10 @@ const displayTask = () => {
       `).join('');
 };
 
-// save to local storage
+// save to local storage.
 const save = (elem) => localStorage.setItem('tasks', JSON.stringify(elem));
 
-// delete task function
+// delete task function.
 const deleteTask = (e) => {
   if (e.target.classList.contains('fa-trash')) {
     e.target.parentElement.remove();
@@ -46,7 +46,7 @@ const deleteTask = (e) => {
 };
 tasks.addEventListener('click', deleteTask);
 
-// editing task function
+// editing task function.
 const editing = (event) => {
   if (event.target.type === 'text' && event.key === 'Enter') {
     const targetedElem = event.target.parentElement.parentElement;
@@ -58,7 +58,7 @@ const editing = (event) => {
 
 tasks.addEventListener('keypress', editing);
 
-// update on changing the checkbock function
+// update on changing the checkbock function.
 const updateChanges = (event) => {
   if (event.target.checked) {
     event.target.nextElementSibling.classList.add('checked');
@@ -75,12 +75,12 @@ const updateChanges = (event) => {
 
 tasks.addEventListener('change', updateChanges);
 
-// referesh on click refereshing button function
+// referesh on click refereshing button function.
 refresh.addEventListener('click', () => {
-    window.location.reload();
+  window.location.reload();
 });
 
-// clear all completed function
+// clear all completed function.
 const clearAllCompleted = () => {
   const uncompletedTasks = tasksList.filter((element) => element.completed !== true);
   const newTaskList = uncompletedTasks.map((elem, index) => {
@@ -93,7 +93,7 @@ const clearAllCompleted = () => {
 
 clearAll.addEventListener('click', () => clearAllCompleted());
 
-// add new task function
+// add new task function.
 const addTask = () => {
   if (!addNewTask.value) return;
   const index = tasksList.length + 1;
